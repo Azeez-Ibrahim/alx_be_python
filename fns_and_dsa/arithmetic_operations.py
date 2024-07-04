@@ -8,7 +8,7 @@ def perform_operation(num1, num2, operation):
         return num1 - num2
     if operation == "multiply":
         return num1 * num2
-    if operation == "divide" and num2 != 0:
-        return num1 / num2
-    else:
+    if  num2 == 0:
         return "ZeroDivisionError"
+    elif operation == "divide":
+        return num1 / num2

@@ -1,4 +1,4 @@
-def perform_operation(num1=None, num2=None, operation=None):
+def perform_operation(num1, num2, operation):
     """
     a function that performs basic arithmetic operations
     """

@@ -16,7 +16,7 @@ def convert_to_fahrenheit(celsius):
     a function that converts celsius to fahrenheit
     """
 
-    c_to_f = CELSIUS_TO_FAHRENHEIT_FACTOR * celsius + 32
+    c_to_f = 32 + celsius * CELSIUS_TO_FAHRENHEIT_FACTOR
     print(f"{celsius}°C is {c_to_f}°F")
 
 

@@ -42,18 +42,15 @@ class Library:
                 return True
         return False
 
-    def return_book(self, title):
+    def return_book(self):
         """
         Attempt to return a book by its title.
-
-        Parameters:
-        title (str): The title of the book to be returned.
 
         Returns:
         bool: True if the book was successfully returned, False otherwise.
         """
         for book in self._books:
-            if book.title == title and book._is_checked_out:
+            if book._is_checked_out:
                 book._is_checked_out = False
                 return True
         return False
